@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+
+  rabbitmq:
+    restart: always
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    labels:
+      NAME: "rabbitmq"
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  telemetry:
+    restart: always
+    image: telemetry
+    container_name: telemetry
+    network_mode: "host"
+
+  station:
+    restart: always
+    image: station
+    container_name: station
+    network_mode: "host"
