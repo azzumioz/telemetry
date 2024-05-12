@@ -2,14 +2,14 @@
 
 ### Get data from HT2000 CO2, temperature, humidity from message broker, get weather from openweathermap.org
 
-###Tech stack
+### Tech stack
 - JDK 8+;
 - Maven;
 - Spring boot;
 - PostgreSQL
 - Rabbit MQ;
 
-###Configuration File
+### Configuration File
 
 Set properties in application.properties: 
 - DB connection
@@ -18,7 +18,7 @@ Set properties in application.properties:
 - RabbitMQ properties
 - Scheduler properties
 
-###API Documentation
+### API Documentation
 
 Measure controller
 
@@ -34,3 +34,7 @@ Weather controller
 
 - GET /rest/weatherlast - Get weather
 - GET /rest/weatherfilter - Get weather between dates
+
+### Project architecture
+
+![project_weather](https://github.com/azzumioz/telemetry/assets/40742197/e2c89e5f-5ed3-4ba9-a0e6-208c41ddb02b)
